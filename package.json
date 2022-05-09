@@ -8,6 +8,7 @@
     "server": "webpack serve --mode=development --open-target /index.html",
     "build": "webpack --mode=production",
     "test": "jest --coverage",
+    "doc": "jsdoc -c jsdoc.conf.json",
     "prepare": "husky install"
   },
   "author": "",
@@ -26,6 +27,7 @@
     "html-webpack-plugin": "^5.5.0",
     "husky": "^7.0.4",
     "jest": "^28.1.0",
+    "jsdoc": "^3.6.10",
     "mini-css-extract-plugin": "^2.6.0",
     "webpack": "^5.72.0",
     "webpack-cli": "^4.9.2",

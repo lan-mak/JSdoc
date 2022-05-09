@@ -23,11 +23,11 @@ test('Длинна name = 17', () => {
   }).toThrowError(new Error('Имя должно иметь длинну от 2 до 10 знаков'));
 });
 
-test('неправильный тип', () => {
+test('Неправильный тип персонажа', () => {
   expect(() => {
     const result = new Character('Goga', 'Dae');
     return result;
-  }).toThrowError(new Error('Неправильный тип'));
+  }).toThrowError(new Error('Неправильный тип персонажа'));
 });
 
 test('Name и Type - правильные', () => {

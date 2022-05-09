@@ -1,3 +1,12 @@
+/**
+ * @description Создания персонажа
+ * @constructor
+ * @param {string} name Имя персонажа
+ * @param {string} type Тип персонажа в зависимости от списка parametersCharacter
+ * @throws {Error} Ошибка длинны имени от 2 до 10 знаков
+ * @throws {Error} Ошибка неправильный тип персонажа
+*/
+
 export default class Character {
   constructor(name, type) {
     this.name = name;
@@ -22,7 +31,7 @@ export default class Character {
       this.attack = Number(parametersCharacter[type].split('/')[0]);
       this.defence = Number(parametersCharacter[type].split('/')[1]);
     } else {
-      throw new Error('Неправильный тип');
+      throw new Error('Неправильный тип персонажа');
     }
   }
 
